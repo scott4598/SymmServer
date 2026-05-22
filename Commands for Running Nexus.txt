@@ -1,0 +1,21 @@
+Commands for Running Nexus Server -Need to double check these are fully accurate
+==================================
+Start terminal from the target folder
+
+START NEXUS REPO
+----------------
+sudo docker compose up -d
+
+UPLOAD -arguments passed in maven version arg (messy but works) -must upload with pom.xml for webhook to trigger
+		-must be done from the folder where the jar and pom being uploaded are (likely want 2nd terminal)
+-------------------------------------
+curl -u admin:newcastle98 -X POST "http://localhost:8081/service/rest/v1/components?repository=symm-repo" -F "maven2.groupId=com.research.prototype"   -F "maven2.artifactId=analysis-subject"   -F "maven2.version=1.2.0--args--+runSyrs"   -F "maven2.asset1=@Hello.jar"   -F "maven2.asset1.extension=jar"   -F "maven2.asset2=@pom.xml" -F "maven2.asset2.extension=pom"
+
+DELETE -do between upload tests to ensure the webhook fires
+------
+curl -u admin:newcastle98 -X DELETE "http://localhost:8081/service/rest/v1/components?repository=symm-repo&maven2.groupId=com.research.prototype&maven2.artifactId=analysis-subject&maven2.version=1.2.0"
+
+STOP NEXUS REPO
+---------------
+sudo docker-compose stop
+
