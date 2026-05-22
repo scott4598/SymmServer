@@ -1,0 +1,9 @@
+int java.lang.String:length()
+{
+char[] $r1;
+  int $i0;
+  $r1=this.value;
+ $i0=#$r1;
+ return  $i0;
+ } 
+

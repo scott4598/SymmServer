@@ -1,0 +1,35 @@
+void java.io.BufferedWriter:flushBuffer()
+{
+java.lang.Object r1;
+  java.lang.Throwable r2;
+  java.lang.Object $r3;
+  int $i0;
+  int $i1;
+  char[] $r4;
+  java.io.Writer $r5;
+  java.lang.Throwable $r6;
+  $r3=this.lock;
+ r1=$r3;
+ monitorenter $r3;
+ label0:this#java.io.BufferedWriter:ensureOpen();
+ $i0=this.nextChar;
+ if ($i0!=0) goto label1;
+ monitorexit r1;
+ label2:return;
+ label1:$r5=this.out;
+ $r4=this.cb;
+ $i1=this.nextChar;
+ $r5.write($r4,0,$i1);
+ this.nextChar=0;
+ monitorexit r1;
+ label3:goto label4;
+ label5:$r6 = catch;
+ r2=$r6;
+ monitorexit r1;
+ label6:throw r2;
+ label4:return;
+ catch java.lang.Throwable: label0 - label2 : label5;
+catch java.lang.Throwable: label1 - label3 : label5;
+catch java.lang.Throwable: label5 - label6 : label5;
+} 
+

@@ -1,0 +1,10 @@
+static boolean sun.misc.VM:isSystemDomainLoader(java.lang.ClassLoader r0)
+{
+boolean $z0;
+  if (r0!=null) goto label0;
+ $z0=1;
+ goto label1;
+ label0:$z0=0;
+ label1:return  $z0;
+ } 
+

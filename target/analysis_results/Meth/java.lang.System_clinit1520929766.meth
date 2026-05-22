@@ -1,0 +1,11 @@
+static java.lang.System
+{
+java.lang.System.registerNatives();
+ java.lang.System.in=null;
+ java.lang.System.out=null;
+ java.lang.System.err=null;
+ java.lang.System.security=null;
+ java.lang.System.cons=null;
+ return;
+ } 
+

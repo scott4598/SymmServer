@@ -1,0 +1,6 @@
+java.lang.SecurityException(java.lang.String r1)
+{
+this#java.lang.RuntimeException(r1);
+ return;
+ } 
+

@@ -1,0 +1,23 @@
+static sun.misc.VM
+{
+java.lang.Object $r0;
+  boolean $z0;
+  java.util.Properties $r1;
+  sun.misc.VM.suspended=0;
+ sun.misc.VM.booted=0;
+ $r0=new java.lang.Object;
+ $r0#java.lang.Object();
+ sun.misc.VM.lock=$r0;
+ sun.misc.VM.directMemory=67108864L;
+ sun.misc.VM.defaultAllowArraySyntax=0;
+ $z0=sun.misc.VM.defaultAllowArraySyntax;
+ sun.misc.VM.allowArraySyntax=$z0;
+ $r1=new java.util.Properties;
+ $r1#java.util.Properties();
+ sun.misc.VM.savedProps=$r1;
+ sun.misc.VM.finalRefCount=0;
+ sun.misc.VM.peakFinalRefCount=0;
+ sun.misc.VM.initialize();
+ return;
+ } 
+

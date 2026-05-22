@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  analysis-engine:
+    build: .
+    container_name: analysis-engine
+    ports:
+      - "5000:5000"
+    networks:
+      - research-net
+    volumes:
+      - ./analysis_results:/tmp/Syrs
+      
+  nexus-server:
+    image: sonatype/nexus3
+    container_name: nexus-server
+    ports:
+      - "8081:8081"
+    networks:
+      - research-net
+    volumes:
+      - nexus-data:/nexus-data  # This keeps your repos alive!
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+
+networks:
+  research-net:
+    driver: bridge
+
+volumes:
+  nexus-data:

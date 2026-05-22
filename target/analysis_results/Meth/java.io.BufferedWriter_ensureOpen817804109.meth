@@ -1,0 +1,12 @@
+void java.io.BufferedWriter:ensureOpen()
+{
+java.io.Writer $r1;
+  java.io.IOException $r2;
+  $r1=this.out;
+ if ($r1!=null) goto label0;
+ $r2=new java.io.IOException;
+ $r2#java.io.IOException("Stream closed");
+ throw $r2;
+ label0:return;
+ } 
+

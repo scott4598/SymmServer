@@ -1,0 +1,8 @@
+void java.io.Writer:write(java.lang.String r1)
+{
+int $i0;
+  $i0 = r1.length();
+ this#java.io.Writer(r1,0,$i0);
+ return;
+ } 
+

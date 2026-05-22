@@ -1,0 +1,32 @@
+Error in method <sun.misc.Unsafe: void <clinit>()>: statement $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J"): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.util.concurrent.atomic.AtomicReference: void <clinit>()>: statement $r1 = staticinvoke <sun.misc.Unsafe: sun.misc.Unsafe getUnsafe()>(): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.security.Policy: boolean isSet()>: statement $r2 = virtualinvoke $r1.<java.util.concurrent.atomic.AtomicReference: java.lang.Object get()>(): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.security.AccessControlContext: sun.security.util.Debug getDebug()>: statement $z1 = staticinvoke <java.security.Policy: boolean isSet()>(): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.security.AccessController: void checkPermission(java.security.Permission)>: statement r13 = staticinvoke <java.security.AccessControlContext: sun.security.util.Debug getDebug()>(): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.lang.SecurityManager: void checkPermission(java.security.Permission)>: statement staticinvoke <java.security.AccessController: void checkPermission(java.security.Permission)>(r1): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.lang.ClassLoader: void checkClassLoaderPermission(java.lang.ClassLoader,java.lang.Class)>: statement virtualinvoke r2.<java.lang.SecurityManager: void checkPermission(java.security.Permission)>($r4): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.lang.Class: java.lang.ClassLoader getClassLoader()>: statement staticinvoke <java.lang.ClassLoader: void checkClassLoaderPermission(java.lang.ClassLoader,java.lang.Class)>(r1, $r3): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.lang.Class: boolean desiredAssertionStatus()>: statement r1 = virtualinvoke this.<java.lang.Class: java.lang.ClassLoader getClassLoader()>(): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <sun.nio.cs.StreamEncoder: void <clinit>()>: statement $z0 = virtualinvoke $r0.<java.lang.Class: boolean desiredAssertionStatus()>(): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <sun.nio.cs.StreamEncoder: void flushBuffer()>: statement $z0 = specialinvoke this.<sun.nio.cs.StreamEncoder: boolean isOpen()>(): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.io.OutputStreamWriter: void flushBuffer()>: statement virtualinvoke $r1.<sun.nio.cs.StreamEncoder: void flushBuffer()>(): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.io.PrintStream: void write(java.lang.String)>: statement virtualinvoke $r6.<java.io.OutputStreamWriter: void flushBuffer()>(): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.io.PrintStream: void print(java.lang.String)>: statement specialinvoke this.<java.io.PrintStream: void write(java.lang.String)>(r1): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <java.io.PrintStream: void println(java.lang.String)>: statement virtualinvoke this.<java.io.PrintStream: void print(java.lang.String)>(r1): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+
+Error in method <Hello: void main(java.lang.String[])>: statement virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("Hello"): Could not tranform $i5 = virtualinvoke $r7.<sun.misc.Unsafe: int arrayBaseOffset(java.lang.Class)>(class "[J")
+

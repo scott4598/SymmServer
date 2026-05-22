@@ -1,0 +1,7 @@
+java.lang.ClassLoader java.lang.Class:getClassLoader0()
+{
+java.lang.ClassLoader $r1;
+  $r1=this.classLoader;
+ return  $r1;
+ } 
+

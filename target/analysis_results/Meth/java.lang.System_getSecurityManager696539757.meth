@@ -1,0 +1,7 @@
+static java.lang.SecurityManager java.lang.System:getSecurityManager()
+{
+java.lang.SecurityManager $r0;
+  $r0=java.lang.System.security;
+ return  $r0;
+ } 
+

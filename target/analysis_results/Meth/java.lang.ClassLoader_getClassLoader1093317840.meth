@@ -1,0 +1,9 @@
+static java.lang.ClassLoader java.lang.ClassLoader:getClassLoader(java.lang.Class r0)
+{
+java.lang.ClassLoader $r1;
+  if (r0!=null) goto label0;
+ return  null;
+ label0:$r1 = r0.getClassLoader0();
+ return  $r1;
+ } 
+

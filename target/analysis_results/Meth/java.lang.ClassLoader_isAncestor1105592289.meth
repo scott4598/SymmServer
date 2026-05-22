@@ -1,0 +1,11 @@
+boolean java.lang.ClassLoader:isAncestor(java.lang.ClassLoader r1)
+{
+java.lang.ClassLoader r2;
+  r2=this;
+ label0:r2=r2.parent;
+ if (r1!=r2) goto label1;
+ return  1;
+ label1:if (r2!=null) goto label0;
+ return  0;
+ } 
+

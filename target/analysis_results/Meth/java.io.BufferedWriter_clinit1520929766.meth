@@ -1,0 +1,6 @@
+static java.io.BufferedWriter
+{
+java.io.BufferedWriter.defaultCharBufferSize=8192;
+ return;
+ } 
+

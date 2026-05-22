@@ -1,0 +1,11 @@
+static java.lang.Class
+{
+java.io.ObjectStreamField[] $r0;
+  java.lang.Class.registerNatives();
+ java.lang.Class.useCaches=1;
+ $r0=new java.io.ObjectStreamField[0];
+ java.lang.Class.serialPersistentFields=$r0;
+ java.lang.Class.initted=0;
+ return;
+ } 
+
